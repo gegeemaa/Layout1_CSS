@@ -1,0 +1,150 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f9ecf2;
+    max-width: 50em;
+	margin: 0 auto;
+    font: 1em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif; 
+}
+header {
+	background-color: #404040;
+	padding: 1em 1.25em;
+	color: white;	
+}
+
+header h1 {
+	margin: 0; /*header h1 iin margin-iig avch baigaa ni header-iin zaigaar yavna gesen ug.*/
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin: 0 0 .5em;
+	font-weight: 500; /*Usegnii boldiig bagasgaj ogch baigaa gesen ug.*/
+	line-height: 1.1; /*Line height iin zai ni usegnees 1.1 dahin ih gesen ug.*/
+}
+
+h1 { font-size: 2.25em; } /* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+hr
+{
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	border: 0; /*border baihgui gedgiig ilerhiilne.*/
+	border-top: 1px solid #ddd;
+}
+.main {
+	background-color: white;
+	padding: 1em 1.25em;
+	margin: 0px;	
+}
+
+.nav ul {
+        /* first create a flex layout context */      
+        margin: 0px;
+        background: #000066;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-begin;
+        list-style: none;
+        padding-left: 1.25em;
+      }
+
+.nav li a {
+
+        display: block;
+        font-size: 1em;
+        font-weight: 500;
+        color: #E6E6E6;
+        text-decoration: none;
+        padding: 1em;
+        padding-left: 0; 
+      }
+.nav li a:hover {
+        background-color: #00003D;
+        color: white;
+}
+img {
+	max-width: 100%;
+	margin: 0 0 1.5em; /*Image-iig max-width-ees iluu garahaas sergiilne. Zuragand parent elementiin padding uilchlene*/
+}
+
+footer
+{
+	color: #fff;
+	background-color: #404040;
+	padding: 1em 1.25em;
+}
+.inline {
+	list-style: none;
+	padding-left: 0;
+}
+.inline > li {
+	display: inline-block;
+	
+}
+blockquote {
+	padding: 1em 2em;
+	margin: 0 0 2em; /*Zuun taliin margin-iig baihgui bolgoj bna*/
+	border-left: solid 5px #eee;
+}
+
+.btn
+{
+	color: #fff !important;
+	background-color: royalblue;
+	border-color: #222;
+	/*display: inline-block;*/
+	padding: .5em 1em;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;  /*text-iig wrap bolgohgui gesen ug.*/
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: .2em;
+	text-decoration: none;
+}
+
+.btn:hover
+{
+	color: #fff !important;
+	background-color: green;
+}
+.btn:focus
+{
+	color: #fff !important;
+	background-color: black;
+}
+.btn:active
+{
+	color: #fff !important;
+	background-color: red;
+}
+
+@media (min-width: 42em)
+
+{
+	header { padding: 1.5em 3em; }
+	.nav ul { padding-left: 3em; }
+	.main { padding: 2em 3em; }
+	footer { padding: 2em 3em; }
+
+
+
+
+}
